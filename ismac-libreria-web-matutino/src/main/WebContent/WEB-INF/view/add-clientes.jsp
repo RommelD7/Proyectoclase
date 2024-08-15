@@ -31,11 +31,12 @@
                <input type="email" id="correo" name="correo" value="${cliente.correo}" />
                <br/>
                
-               <button type="submit">Guardar</button>
+          <button type="submit">Guardar</button>
                
-               <button onclick="window.location.href='/ismac-libreria-web-matutino/clientes/findAll';return false ;">
+               <button type="submit" onclick="window.location.href='/ismac-libreria-web-matutino/libros/findAll';return false ;">
                Cancelar
                </button>
+ 
          </form>
 
 </body>

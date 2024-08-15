@@ -30,7 +30,7 @@
           <input type="text" id="idioma" name="idioma" value="${libro.idioma}">
           <br/>
           Fecha de Publicacion
-          <input type="date" id="fechaPublicacion" name="fechaPublicacion" value="${libro.fechaPublicacion}">
+          <input type="date" id="fechaPublicacion" name="fechaPublicacion" value="${fn:substring(libro.fechaPublicacion,0,10)}">
           <br/>
           Descripcion
           <input type="text" id="descripcion" name="descripcion" value="${libro.descripcion}">
@@ -56,23 +56,24 @@
           
           Categoria
                 <select id="idCategoria" name ="idCategoria">
-                <option value="1"> 1</option>
-                <option value="2"> 2</option>
-                <option value="3"> 3</option>
+                
+                <c:forEach var="item" items="${categorias}"> 
+                <option value="${item.idCategoria}" ${item.idCategoria == libro.categoria.idCategoria ? 'selected' : ''}>${item.categoria}</option>
+                </c:forEach>
                 </select>
                 <br/>
           
           Autor
                 <select id="idAutor" name ="idAutor">
-                <option value="1"> 5</option>
-                <option value="2"> 6</option>
-                <option value="3"> 7</option>
+               <c:forEach var="item" items="${autores}"> 
+                <option value="${item.idAutor}" ${item.idAutor == libro.autor.idAutor ? 'selected' : ''}> ${item.nombre} ${item.apellido}</option>
+                </c:forEach>
                 </select>
                 
                 <br/>
                 <button type="submit">Guardar</button>
                
-               <button onclick="window.location.href='/ismac-libreria-web-matutino/libros/findAll';return false ;">
+               <button type="submit" onclick="window.location.href='/ismac-libreria-web-matutino/libros/findAll';return false ;">
                Cancelar
                </button>
           

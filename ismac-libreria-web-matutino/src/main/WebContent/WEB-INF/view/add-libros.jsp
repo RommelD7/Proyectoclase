@@ -12,7 +12,7 @@
 <body>
  
           <form action="add" method="post">
-          <input type="hidden" id="idlibro" name="idlibro" value="${libro.idLibro }">
+          <input type="hidden" id="idLibro" name="idLibro" value="${libro.idLibro }">
           <br/>
           Titulo
           <input type="text" id="titulo" name="titulo" value="${libro.titulo}">

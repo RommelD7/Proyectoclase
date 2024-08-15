@@ -70,6 +70,7 @@
                           </button>
                           <button onclick="window.location.href='/ismac-libreria-web-matutino/libros/findOne?idLibro=${item.idLibro}&opcion=2';return false">
                           Eliminar
+                          
                           </button>             
                     </td> 	
 				

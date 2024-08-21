@@ -5,16 +5,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<title>Ssitema Libreria</title>
+
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-table.min.css" />
+
 </head>
 <body>
  
 <h1>Libros </h1>
-<button onclick="window.location.href='/ismac-libreria-web-matutino/libros/findOne?opcion=1';return false ;">
+<div class="container" style="text-aling: center;">
+<button class="btn btn-primary" onclick="window.location.href='/ismac-libreria-web-matutino/libros/findOne?opcion=1';return false ;">
          Agregar
         </button>
-        
+        <div/>
        
 <table>
 <thead>
@@ -84,6 +89,19 @@
  
  
 </table>
+ 
+ 
+ <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/bootstrap.bundle.min.js"></script>
+ <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-3.7.1.min.js"></script>
+ <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/.min.js"></script>
+ <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/bootstrap-table.min.js"></script>
+ <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/bootstrap-table-es-MX.min.js"></script>
+ 
+ 
+ 
+ 
+ 
+ 
  
 </body>
 </html>

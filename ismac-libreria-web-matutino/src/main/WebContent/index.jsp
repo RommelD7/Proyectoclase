@@ -4,7 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Sistema de Libreria</title>
+
+
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/estilos1.css" />
 </head>
 <body>
          <h1> Hola mundo desde TOMCAT </h1>

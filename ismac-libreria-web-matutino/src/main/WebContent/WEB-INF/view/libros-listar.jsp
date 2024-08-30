@@ -81,7 +81,7 @@
 									<td> ${item.autor.nombre} ${item.autor.apellido}</td>				
 									<td>
 										<button class="btn btn-success"  onclick="window.location.href='/ismac-libreria-web-matutino/libros/findOne?idLibro=${item.idLibro}&opcion=1'; return false;">						
-											<i class="fa-solid fa-pen-to-square"></i>
+											<i class="fa-solid fa-pen-to-square"></i> 
 											<!-- Actualizar -->																									
 										</button>
 										<button class="btn btn-danger" onclick="window.location.href='/ismac-libreria-web-matutino/libros/findOne?idLibro=${item.idLibro}&opcion=2'; return false;">						
